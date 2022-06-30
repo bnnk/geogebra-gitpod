@@ -947,6 +947,15 @@ public class GPopupPanel extends SimplePanel implements
 	}
 
 	/**
+	 * Sets the popup's padding CSS property.
+	 * @param value - value of the padding
+	 * @param unit - CSS length unit
+	 */
+	public void setPadding(double value, Unit unit) {
+		getElement().getStyle().setPadding(value, unit);
+	}
+
+	/**
 	 * Sets the popup's position using a {@link PositionCallback}, and shows the
 	 * popup. The callback allows positioning to be performed based on the
 	 * offsetWidth and offsetHeight of the popup, which are normally not

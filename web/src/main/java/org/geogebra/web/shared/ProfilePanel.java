@@ -6,6 +6,7 @@ import org.geogebra.web.html5.gui.view.button.StandardButton;
 import org.geogebra.web.html5.main.AppW;
 import org.geogebra.web.html5.main.LocalizationW;
 
+import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.FlowPanel;
@@ -38,6 +39,7 @@ public class ProfilePanel extends FlowPanel {
 
 		final GPopupPanel popup = new GPopupPanel(app.getPanel(), app);
 		popup.addStyleName("optionsPopup");
+		popup.setPadding(0, Style.Unit.PX);
 
 		popup.setAutoHideEnabled(true);
 		popup.addAutoHidePartner(getElement());

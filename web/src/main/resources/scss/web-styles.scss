@@ -2128,7 +2128,8 @@
 	.optionsPopup {
 		float: right;
 		background: none;
-		box-shadow: none;
+		box-shadow: 0 0 2px 1px rgba(102, 102, 102, 0.3);
+		margin-top: 5px;
 	}
 
 	.headerFirst {
